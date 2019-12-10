@@ -25,6 +25,12 @@ public class Program {
 		Date dateOfBirth = sdf.parse(sc.next());
 		Client client = new Client(name, email, dateOfBirth);
 		
+		System.out.println("Enter order data: ");
+		System.out.print("Status: ");
+		String status = sc.nextLine();
+		System.out.print("How many items to this order? ");
+		int quantity = sc.nextInt();
+		
 		System.out.println(client);
 		
 		sc.close();
