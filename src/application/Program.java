@@ -7,6 +7,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Client;
+import entities.Order;
 
 public class Program {
 
@@ -30,6 +31,7 @@ public class Program {
 		String status = sc.nextLine();
 		System.out.print("How many items to this order? ");
 		int quantity = sc.nextInt();
+		Order order = new Order(Order.valueOf(status));
 		
 		System.out.println(client);
 		

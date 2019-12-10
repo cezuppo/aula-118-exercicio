@@ -7,12 +7,12 @@ import entities.enums.OrderStatus;
 public class Order {
 
 	private Date moment;
-	private OrderStatus status;
+	private String status;
 	
 	public Order() {
 	}
 
-	public Order(OrderStatus status) {
+	public Order(String status) {
 		this.status = status;
 		this.moment = new Date();
 	}
@@ -21,12 +21,12 @@ public class Order {
 		return moment;
 	}
 
-	public OrderStatus getStatus() {
+	public String getStatus() {
 		return status;
 	}
 
-	public void setStatus(OrderStatus status) {
-		this.status = status;
+	public void setStatus(String status) {
+		this.status = OrderStatus.valueOf(status);
 	}
 	
 }
