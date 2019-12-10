@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 import entities.Client;
 import entities.Order;
+import entities.enums.OrderStatus;
 
 public class Program {
 
@@ -31,7 +32,7 @@ public class Program {
 		String status = sc.nextLine();
 		System.out.print("How many items to this order? ");
 		int quantity = sc.nextInt();
-		Order order = new Order(Order.valueOf(status));
+		Order order = new Order(status);
 		
 		System.out.println(client);
 		
