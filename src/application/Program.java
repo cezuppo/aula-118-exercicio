@@ -35,7 +35,14 @@ public class Program {
 		int quantity = sc.nextInt();
 		Order order = new Order(status);
 		OrderItem orderItem = new OrderItem(quantity);
+		String productName;
 		
+		
+		for (int i = 1; i <= quantity; i++) {
+			System.out.println("Enter  #" + i + " item data:");
+			System.out.print("Product name: ");
+			
+		}
 		sc.close();
 	}
 	
